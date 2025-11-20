@@ -118,7 +118,6 @@ public:
             RCLCPP_ERROR(this->get_logger(), " Unknown result code for goal #%zu!", index + 1);
             break;
         }
-        // index++;
         // send_goal();
     }
 };
