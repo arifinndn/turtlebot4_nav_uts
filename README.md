@@ -1,4 +1,4 @@
-# turtlebot4_uts
+# turtlebot4_nav_uts
 Source code untuk UTS RE702
 Task dari project ini adalah bergerak ke titik A, mengaktifkan bel sekali (mendapatkan barang/benda kerja), lalu berpindah ke titik B dan mengaktifkan bel dua kali (barang/benda kerja sampai tujuan).
 
@@ -11,7 +11,7 @@ cd turtlebot4_ws/src
 ```
 ### Clone Repo 
 ```
-git clone https://github.com/RICCY11/turtlebot4_uts.git
+git clone https://github.com/arifinndn/turtlebot4_nav_uts.git
 ```
 ### Build 
 ```
@@ -24,11 +24,11 @@ ssh ubuntu@192.168.185.3
 ### Jalankan localization launch & navigation launch (pada turtlebot4)
 ```
 source install/setup.bash
-ros2 launch turtlebot4_uts localization.launch.py
+ros2 launch turtlebot4_nav_uts localization.launch.py
 ```
 ```
 source install/setup.bash
-ros2 launch turtlebot4_uts uts_navigation.launch.py
+ros2 launch turtlebot4_nav_uts uts_navigation.launch.py
 ```
 ### Jalankan Rviz (pada PC)
 ```
