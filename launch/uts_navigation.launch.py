@@ -19,7 +19,7 @@ ARGUMENTS = [
                           description='Use sim time'),
     DeclareLaunchArgument('params_file',
                           default_value=PathJoinSubstitution([
-                              get_package_share_directory('turtlebot4_uts'),
+                              get_package_share_directory('turtlebot4_nav_uts'),
                               'config',
                               'nav2_params.yaml'
                               ]),
@@ -30,7 +30,7 @@ ARGUMENTS = [
 
 
 def launch_setup(context, *args, **kwargs):
-    pkg_nav2_bringup = get_package_share_directory('turtlebot4_uts')
+    pkg_nav2_bringup = get_package_share_directory('turtlebot4_nav_uts')
 
     nav2_params = LaunchConfiguration('params_file')
     namespace = LaunchConfiguration('namespace')
